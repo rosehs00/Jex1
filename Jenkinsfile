@@ -9,7 +9,7 @@ pipeline {
                 checkout scm
 
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
-
+                sh "echo test"
             }
 
             post {
